@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--basic-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--mobile meters-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!--site metas-->
+    <title>Coffee House</title>
+    <meta name="description" content="This is a coffee house website">
+    <meta name="author" content="Marmik Shah">
+
+    <!--favicon-->
+    <link rel="icon" href="image/favicon.png">
+
+    <!--fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+    <!--Style css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--Navbar-->
+
+    <nav class="nav">
+        <a href="#home" class="btn">home</a>
+        <a href="#about" class="btn">about</a>
+        <a href="#menu" class="btn">menu</a>
+        <a href="#where" class="btn">where</a>
+
+    </nav>
+
+
+    <!--Home-->
+
+    <div id="home">
+        <span class="time">Open from 7AM to 6PM</span>
+        <span class="name">Coffee <br />Cafe</span>
+        <span class="address">15 Baker Street, 4B12</span>
+    </div>
+
+
+    <!--About-->
+
+    <div id="about">
+        <h5 class="heading">About the cafe</h5>
+        <p class="abtcont">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="abtcont">In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+        <div class="leftbar">
+            <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+            <p>Chef, Coffeeist and Owner: Liam Brown</p>
+        </div>
+
+        <img src="image/coffeeshop.jpg" style="width:100%;max-width:1000px">
+        <div class="abtcont2">
+            <p><strong>Opening hours:</strong> Everyday from 7AM to 6PM.</p>
+            <p><strong>Address:</strong> 15 Baker Street, 4B12, UK</p>
+        </div>
+    </div>
+
+
+
+    <!--Menu-->
+
+    <div id="menu">
+        <h5 class="heading">the Menu</h5>
+        <div class="menubtn">
+            <span data-tab-target="#Eat" class="tab active">Eat</span>
+            <span data-tab-target="#Drink" class="tab">Drink</span>
+        </div>
+
+
+        <div class="tabcont">
+            <div id="Eat" data-tab-content class="active">
+                <div class="item">
+                    <br /><br />
+                    <h5>Bread Basket</h5>
+                    <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    <br />
+                </div>
+                <div class="item">
+                    <h5>Honey Almond Granola with Fruits</h5>
+
+                    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                    <br />
+                </div>
+                <div class="item">
+                    <h5>Belgian Waffle</h5>
+                    <p>Vanilla flavored batter with malted flour 7.50</p>
+                    <br />
+                </div>
+                <div class="item">
+                    <h5>Blueberry Pancakes</h5>
+                    <p>With syrup, butter and lots of berries 8.50</p>
+                    <br />
+                </div>
+                <div class="item">
+                    <h5>Scrambled eggs</h5>
+                    <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                    <br /><br />
+                </div>
+            </div>
+
+            <div id="Drink" data-tab-content>
+                <div class="item">
+                    <br /><br />
+                    <h5>Coffee</h5>
+                    <p>Regular coffee 2.50</p>
+                    <br />
+                </div>
+                <div class="item">
+                    <h5>Chocolato</h5>
+                    <p>Chocolate espresso with milk 4.50</p>
+                    <br />
+                </div>
+                <div class="item">
+                    <h5>Corretto</h5>
+                    <p>Whiskey and coffee 5.00</p>
+                    <br />
+                </div>
+                <div class="item">
+                    <h5>Iced tea</h5>
+                    <p>Hot tea, except not hot 3.00</p>
+                    <br />
+                </div>
+                <div class="item">
+                    <h5>Soda</h5>
+                    <p>Coke, Sprite, Fanta, etc. 2.50</p>
+                    <br /><br />
+                </div>
+            </div>
+        </div>
+        <img src="image/coffeehouse2.jpg" alt="Coffee" style="width:100%;max-width:1000px">
+    </div>
+
+
+
+    <!--Where-->
+
+    <div id="where">
+        <h5 class="heading">Where to Find us</h5>
+        <p class="wherecont">Find us at some address at some place.</p>
+        <img src="image/map.jpg" alt="Map" style="width:100%;max-width:1000px">
+        <p class="wherecont">
+            <span class="fyi">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+        </p>
+        <p class="wherecont"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+
+   
+    <!--Contact Form-->
+
+    <form>
+        <p><input class="input" type="text" placeholder="Name" required  autocomplete="off" name="Name"></p>
+        
+        <p><input class="input" type="number" placeholder="How many people?" required autocomplete="off" min="1" name="People"></p>
+        
+        <p><input class="input" type="datetime-local" placeholder="Date and time" required name="date" autocomplete="off" value="2020-11-16T20:00"></p>
+        
+        <p><input class="input" type="text" placeholder="Message \ Special requirements" required autocomplete="off" name="Message"></p>
+        
+        <p><button class="intbtn" type="submit">SEND MESSAGE</button></p>
+    </form>
+    
+    
+    </div>
+    
+    
+
+    <!--Footer-->
+
+    <footer>
+        <h3>Powered by <a href="#">Marmik Shah</a></h3><br />
+        <p>&copy; Copyrights preserved</p>
+    </footer>
+
+</body>
+
+<!--JS for Menu-->
+<script>
+    const tabs = document.querySelectorAll('[data-tab-target]');
+    const tabContents = document.querySelectorAll('[data-tab-content]');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.tabTarget);
+            tabContents.forEach(tabContent => {
+                tabContent.classList.remove('active');
+            });
+            tabs.forEach(tab => {
+                tab.classList.remove('active')
+            });
+            tab.classList.add('active');
+            target.classList.add('active');
+        });
+    });
+
+</script>
+
+</html>

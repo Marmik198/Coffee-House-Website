@@ -1,0 +1,343 @@
+body {
+    font-family: "Inconsolata", "sans-serif";
+}
+
+
+::selection {
+    color: white;
+    background: #50708f;
+}
+
+
+
+.heading {
+    margin: 0 auto 50px;
+    width: 280px;
+    padding: 12px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+
+
+/*NAVBAR*/
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    z-index: 1;
+}
+
+
+
+.btn {
+    text-align: center;
+    width: 23%;
+    height: 55%;
+    padding-top: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+.btn:hover {
+    background: lightgray;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+
+
+
+/*HEADER*/
+
+
+#home {
+    width: 101.09%;
+    height: 535px;
+    background: url(../image/coffeehouse.jpg) no-repeat;
+    background-size: 100% 100%;
+    filter: grayscale(50%);
+    position: relative;
+    right: 8px;
+}
+
+
+
+.time {
+    position: absolute;
+    padding: 2px;
+    bottom: 1.8%;
+    left: 2%;
+    z-index: 12;
+    color: white;
+    background: black;
+    font-size: 18px;
+}
+
+.name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 160%;
+    color: white;
+    z-index: 12;
+}
+
+.address {
+    position: absolute;
+    bottom: 1.8%;
+    right: 2%;
+    z-index: 12;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+
+/*About*/
+
+
+#about {
+    max-width: 800px;
+    padding: 70px;
+    margin: 0 auto;
+}
+
+
+.abtcont {
+    font-size: 20px;
+    padding: 15px 0;
+    letter-spacing: 3px;
+    line-height: 120%;
+    font-weight: 200;
+}
+
+
+.leftbar {
+    border-left: 8px solid #848484;
+    background: #e2e2e2;
+}
+
+.leftbar p {
+    margin: 0 15px;
+    font-size: 20px;
+    padding: 25px 0;
+    letter-spacing: 2px;
+    line-height: 120%;
+    font-weight: 200;
+}
+
+
+#about img {
+    display: block;
+    margin: 50px auto;
+    filter: grayscale(75%);
+}
+
+
+.abtcont2 {
+    font-size: 18px;
+    padding: 15px 0;
+    letter-spacing: 3px;
+    line-height: 120%;
+    font-weight: 200;
+}
+
+
+
+
+/*Menu*/
+
+
+#menu {
+    max-width: 800px;
+    padding: 70px;
+    margin: 0 auto;
+}
+
+.menubtn {
+
+    height: 50px;
+    box-shadow: 0px 2px 4px 3px #d3dddd, 0px 2px 4px #add5d5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menubtn .tab {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    color: #4c4c4c;
+    padding: 8px 17%;
+    cursor: pointer;
+}
+
+
+.tab.active, .tab:hover {
+    background: #4c4c4c;
+    color: white;
+}
+
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabcont {
+    margin-top: 5px;
+    box-shadow: 0px 2px 4px 3px #d3dddd, 0px 2px 4px #add5d5;
+}
+
+.menu .item {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.item h5 {
+    font-size: 18px;
+    padding: 2px 15px;
+    letter-spacing: 3px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.item p {
+    color: #4c4c4c;
+    font-size: 18px;
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    line-height: 120%;
+    font-weight: 200;
+}
+
+
+#menu img {
+    display: block;
+    margin: 50px auto;
+    filter: grayscale(75%);
+}
+
+
+
+
+/*Where*/
+
+
+#where {
+    max-width: 800px;
+    padding: 70px;
+    margin: 0 auto;
+}
+
+
+.wherecont {
+    font-size: 20px;
+    padding: 15px 0;
+    letter-spacing: 3px;
+    line-height: 120%;
+    font-weight: 200;
+}
+
+
+#where img {
+    display: block;
+    margin: 40px auto;
+    filter: grayscale(75%);
+}
+
+
+.wherecont .fyi {
+    font-weight: 300;
+    text-transform: uppercase;
+    background: black !important;
+    color: white;
+    padding: 2px 8px;
+}
+
+
+.input {
+    width: 100%;
+    height: 20px;
+    margin: 0 auto 10px;
+    padding: 20px 20px 20px 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    outline: none;
+    border: 3px solid #ccc;
+}
+
+
+.intbtn {
+    width: 250px;
+    background: black;
+    color: white;
+    padding: 20px;
+    margin-top: 5px;
+    outline: none;
+    border: none;
+}
+
+
+.intbtn:hover {
+    background: #ccc;
+    color: black;
+    cursor: pointer
+}
+
+
+
+/*Footer*/
+
+footer {
+    max-width: 100%;
+    text-align: center;
+    padding: 30px;
+    font-size: 22px;
+    background: #ccc;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+}
+
+footer p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer a {
+    color: black;
+}
